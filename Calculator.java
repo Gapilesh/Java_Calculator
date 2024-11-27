@@ -10,6 +10,14 @@ public class Calculator implements ActionListener {
     JTextField textField;
     JButton[] numberButtons = new JButton[10];      // 10 buttons for the 10 numbers
     JButton[] functionButtons = new JButton[8];     // 8 Function Buttons
+    JButton addButton, subButton, mulButton, divButton;
+    JButton decButton, equButton, delButton, clrButton;
+    JPanel panel;       // Panel to keep the buttons
+
+    Font myFont = new Font("Ink Free", Font.BOLD, 30);
+
+    double num1 = 0, num2 = 0, result = 0;
+    char operator;          //This will hold multiply, subtract, etc operators.
 
     Calculator(){
 
