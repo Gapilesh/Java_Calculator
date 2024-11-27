@@ -19,8 +19,15 @@ public class Calculator implements ActionListener {
     double num1 = 0, num2 = 0, result = 0;
     char operator;          //This will hold multiply, subtract, etc operators.
 
-    Calculator(){
+    Calculator(){                   //This is the Constructor
 
+        frame = new JFrame("Calculator");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       //Close out of the program
+        frame.setSize(420, 550);
+        frame.setLayout(null);
+
+
+        frame.setVisible(true);
     }
 
     public static void main(String[] args){
