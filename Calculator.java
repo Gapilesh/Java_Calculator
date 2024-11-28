@@ -50,7 +50,24 @@ public class Calculator implements ActionListener {
         functionButtons[5] = equButton;
         functionButtons[6] = delButton;
         functionButtons[7] = clrButton;
-        
+
+        //Lot of functions, So creating a for loop to iterate 8 times.
+        for (int i=0; i<8; i++){
+            functionButtons[i].addActionListener(this);
+            functionButtons[i].setFont(myFont);
+            functionButtons[i].setFocusable(false);     //Removes the button outline (annoying)
+        }
+
+        //Doing something similar to the Number buttons like we did for function buttons.
+        //This iterates 10 times
+        for (int i=0; i<10; i++){
+            numberButtons[i] = new JButton(String.valueOf(i));
+            numberButtons[i].addActionListener(this);
+            numberButtons[i].setFont(myFont);
+            numberButtons[i].setFocusable(false);
+        }
+
+        //Separately creating the Delete button and clear button on the panel
         
 
 
