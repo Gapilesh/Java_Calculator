@@ -61,18 +61,18 @@ public class Calculator implements ActionListener {
         //Doing something similar to the Number buttons like we did for function buttons.
         //This iterates 10 times
         for (int i=0; i<10; i++){
-            numberButtons[i] = new JButton(String.valueOf(i));
+            numberButtons[i] = new JButton(String.valueOf(i));      //
             numberButtons[i].addActionListener(this);
             numberButtons[i].setFont(myFont);
             numberButtons[i].setFocusable(false);
         }
 
         //Separately creating the Delete button and clear button on the panel
-        
+        delButton.setBounds(50, 430, 145, 50);
+        clrButton.setBounds(205, 430, 145, 50);
 
-
-
-
+        frame.add(delButton);
+        frame.add(clrButton);
         frame.add(textField);
         frame.setVisible(true);
     }
