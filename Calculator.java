@@ -30,7 +30,7 @@ public class Calculator implements ActionListener {
         textField.setBounds(50, 25, 300, 50);
         textField.setFont(myFont);
 
-
+        frame.add(textField);
         frame.setVisible(true);
     }
 
