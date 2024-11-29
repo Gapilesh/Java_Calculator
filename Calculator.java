@@ -91,12 +91,17 @@ public class Calculator implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+
         //To see if somebody's clicking the number buttons
         for(int i=0;i<10;i++){
             if (e.getSource() == numberButtons[i]){
                 textField.setText(textField.getText().concat(String.valueOf(i)));
             }
+        }
+
+        //Adding functionality to decimal button
+        if (e.getSource()==decButton){
+            textField.setText(textField.getText().concat("."));
         }
 
     }
