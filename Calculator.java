@@ -104,5 +104,13 @@ public class Calculator implements ActionListener {
             textField.setText(textField.getText().concat("."));
         }
 
+        //Adding functionality to add button
+        if (e.getSource()==addButton){
+            num1 = Double.parseDouble(textField.getText());
+            //Assigning an operator which is a 'character'
+            operator = "+";
+            textField.setText("");
+        }
+
     }
 }
