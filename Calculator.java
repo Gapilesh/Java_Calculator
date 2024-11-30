@@ -118,5 +118,18 @@ public class Calculator implements ActionListener {
             operator = "-";
             textField.setText("");
         }
+        
+        if (e.getSource()==mulButton){
+            num1 = Double.parseDouble(textField.getText());
+            operator = "*";
+            textField.setText("");
+        }
+
+        if (e.getSource()==divButton){
+            num1 = Double.parseDouble(textField.getText());
+            operator = "/";
+            textField.setText("");
+        }
+
     }
 }
