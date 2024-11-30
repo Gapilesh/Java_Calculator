@@ -131,5 +131,10 @@ public class Calculator implements ActionListener {
             textField.setText("");
         }
 
+        if (e.getSource()==equButton){
+            num2=Double.parseDouble(textField.getText());
+        }
+
+
     }
 }
