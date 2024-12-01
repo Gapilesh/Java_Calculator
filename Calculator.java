@@ -133,8 +133,13 @@ public class Calculator implements ActionListener {
 
         if (e.getSource()==equButton){
             num2=Double.parseDouble(textField.getText());
+        
+            //Using a switch
+            switch(operator){
+                case '+':
+                    result = num1 + num2;
+                    break;
+            }
         }
-
-
     }
 }
