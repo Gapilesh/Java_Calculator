@@ -40,6 +40,7 @@ public class Calculator implements ActionListener {
         equButton = new JButton ("=");
         delButton = new JButton ("Delete");
         clrButton = new JButton ("Clear");
+        negButton = new JButton ("(-)");
 
         //Adding these buttons to the Array "functionButtons"
         functionButtons[0] = addButton;
@@ -53,7 +54,7 @@ public class Calculator implements ActionListener {
         functionButtons[8] = negButton;
 
         //Lot of functions, So creating a for loop to iterate 8 times.
-        for (int i=0; i<8; i++){
+        for (int i=0; i<9; i++){
             functionButtons[i].addActionListener(this);
             functionButtons[i].setFont(myFont);
             functionButtons[i].setFocusable(false);     //Removes the button outline (annoying)
@@ -69,8 +70,9 @@ public class Calculator implements ActionListener {
         }
 
         //Separately creating the Delete button and clear button on the panel
-        delButton.setBounds(50, 430, 145, 50);
-        clrButton.setBounds(205, 430, 145, 50);
+        negButton.setBounds(50, 430, 100, 50);
+        delButton.setBounds(150, 430, 100, 50);
+        clrButton.setBounds(250, 430, 100, 50);
 
         panel = new JPanel();
         panel.setBounds(50,100,300,300);
