@@ -9,9 +9,9 @@ public class Calculator implements ActionListener {
     JFrame frame;
     JTextField textField;
     JButton[] numberButtons = new JButton[10];      // 10 buttons for the 10 numbers
-    JButton[] functionButtons = new JButton[8];     // 8 Function Buttons
+    JButton[] functionButtons = new JButton[9];     // 8 Function Buttons
     JButton addButton, subButton, mulButton, divButton;
-    JButton decButton, equButton, delButton, clrButton;
+    JButton decButton, equButton, delButton, clrButton, negButton;
     JPanel panel;       // Panel to keep the buttons
 
     Font myFont = new Font("Ink Free", Font.BOLD, 30);
@@ -50,6 +50,7 @@ public class Calculator implements ActionListener {
         functionButtons[5] = equButton;
         functionButtons[6] = delButton;
         functionButtons[7] = clrButton;
+        functionButtons[8] = negButton;
 
         //Lot of functions, So creating a for loop to iterate 8 times.
         for (int i=0; i<8; i++){
